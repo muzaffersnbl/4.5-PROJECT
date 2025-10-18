@@ -1,18 +1,15 @@
 spring:
- application:
-  name: config-server
+  application:
+    name: config-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/muzaffersnbl/4.5-PROJECT
+          uri: https://github.com/halitkalayci/4.5-project
           default-label: master
           search-paths: 
-           - configuration/
-           -configuration/{application}
-
-
+            - configurations/
+            - configurations/{application}
 
 server:
   port: 8787
-        
