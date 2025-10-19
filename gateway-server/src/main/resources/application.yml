@@ -5,3 +5,5 @@ spring:
     active: dev
   config:
     import: configserver:http://localhost:8789
+    jmx:
+      enabled: false
